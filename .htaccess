@@ -1,0 +1,9 @@
+RewriteEngine On
+# Certifique-se de que o RewriteEngine está ativado
+
+# Verifique se o arquivo ou diretório não existe
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirecione todas as 404 para o domínio desejado
+RewriteRule . https://desentupidorapiraquara.com.br [L,R=301]
